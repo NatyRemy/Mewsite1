@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap');
+@import url(variables.css);
+
+
+
+body{
+    margin: auto;
+    padding: auto;
+    font-family: "M PLUS 1", sans-serif;
+    background-color: var(--back);
+}
+
+
+
+header{
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: var(--blue);
+    border-radius: 0 0 20px 20px;
+    position: sticky;
+    top: 0;
+    box-shadow: inset 0px 1px 2px var(--backb),0 1px 5px var(--dblue);
+}
+
+header ul{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-top: -5px;
+    margin-right: 20px;
+}
+
+header li{
+    margin: 15px;
+    /*background-color: rgb(248, 248, 241);*/
+    border-radius: 20px;
+    
+    text-align: center;
+    
+}
+
+header a{
+    color: var(--backb);
+    font-size: 17px;
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 10px;
+    transition: box-shadow 0.6s;
+}
+
+header a:hover{
+    color: var(--backb);
+    box-shadow: 3px 3px 2px var(--dblue),-1px -1px 4px var(--backb);
+    font-size: 17px;
+    margin-left: 10px;
+    
+}
+
+#mew img{
+    height: 190px;
+    
+}
+
+#mew{
+    height: 200px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#mew div{
+    background-color: var(--blue);
+    height: 20px;
+    width: 85%;
+    margin: auto;
+    margin-top:70px;
+    border-radius:20px;
+}
+
+
+
+
+/* AMINAJSDSF MAIN MIAN MAIN MIAN MAIN MIAN*/
+
+
+
+
+
+#maain{
+    width: 80%;
+    margin: auto;
+    height: 3000px;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.first{
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    
+}
+
+.todo{
+    background-color: var(--idk);
+    margin: 20px;
+    border-radius: 20px;
+    height: 350px;
+    transition: box-shadow 0.4s;
+    box-shadow: -2px 3px 4px var(--pink),3px -3px 1px var(--backb);
+}
+
+.todo:hover{
+    box-shadow: -3px 5px 3px var(--pink),5px -5px 1px var(--backb);
+}
+
+h1{
+    text-align: center;
+    color: var(--pink);
+}
+
+.todo-btn{
+    align-items: center;
+    text-align: center;
+    background-color: var(--pink);
+}
+
+.todo-btn a{
+    margin-left: 20px;
+    color: var(--idk);
+    cursor: pointer;
+}
+
+.blocks{
+    display: flex;
+    align-items: center;
+    color: var(--pink);
+    font-size: 20px;
+    margin: 20px;
+    margin-left: 300px;
+}
+
+
+
+
+input[type="checkbox"]{
+    appearance: none;
+    height: 25px;
+    width: 25px;
+    background-color: var(--backb);
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+input[type="checkbox"]:after{
+    font-family: "Font Awesome 5 free";
+    font-weight: 700;
+    font-size: 15px;
+    padding-left: 4px;
+    color: rgb(255, 255, 255);
+    content: "\f004";
+    margin-top: 5px;
+    display: none;
+}
+
+input[type="checkbox"]:hover{
+    box-shadow: 0px 0px 10px  rgb(255, 255, 255);
+}
+
+input[type="checkbox"]:checked{
+    background-color: var(--idk);
+}
+
+input[type="checkbox"]:checked:after{
+    display: block;
+}
+
+
+
+.daily{
+    display: block;
+}
+
+.daily img{
+    height: 150px;
+    margin-left: 250px;
+    margin-top: -200px;
+}
+
+.weekly{
+    display: none;
+}
+
+.idk{
+    display: none;
+}
+
+
+
+
+/* PLAYLIST PLAYLIST PLAYLIST PLAYLIST*/
+
+
+
+
+
+.playlist{
+    height: 400px;
+    background-color: var(--bluey);
+    margin:20px 10px;
+    border-radius: 50px;
+    text-align: center;
+    color: rgb(136, 142, 232);
+    transition: box-shadow 0.4s;
+    box-shadow: 3px 3px 2px var(--blue),-4px -4px 2px var(--backb);
+}
+
+.playlist:hover{
+    box-shadow: 5px 5px 2px var(--blue),-5px -5px 2px var(--backb);
+
+}
+
+.playlist p{
+    background-color: var(--blue);
+    height: 40px;
+    color: aliceblue;
+    font-size: 20px;
+    margin: auto;
+    border-radius: 50px 50px 0 0; 
+}
+
+.player-img img{
+    border-radius: 20px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.player-progress{
+    background-color: var(--back);
+    width: 90%;
+    height: 20px;
+    margin: auto;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.progress{
+    background-color: var(--blue);
+    border-radius: 5px;
+    height: 20px;
+    transition: width 0.1s linear;
+}
+
+.music-duration{
+    position: relative;
+    top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-controls{
+    position: relative;
+    top: 15px;
+    left: 0px;
+}
+
+.fa-solid{
+    margin-right: 30px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.fa-solid:hover{
+    filter: brightness(40%);
+    text-shadow: 0px 0px 15px violet;
+}
+
+
+#music-title{
+    margin-top: 0px;
+}
+
+#music-artist{
+    margin-top: -30px;
+}
+
+/* NOTES NOTES NOTES NOTES NOTES NOTES NOTES NOTES NOTES*/
+
+.notes{
+    background-color: var(--backb);
+    height: 400px;
+    margin: 20px;
+    border-radius: 10px 50px;
+    box-shadow: 4px 2px 1px var(--blue), -4px -2px 1px var(--pink);
+
+}
+
+#note-input{
+    margin-left: 60px;
+    border-radius: 5px;
+    border: solid var(--blue);  
+
+}
+
+.notes ul{
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    color: var(--blue);
+    list-style: circle;
+    
+}
+
+.notes button{
+    border: solid var(--backb);  
+    border-radius: 5px;
+    background-color: var(--blue);
+    cursor: pointer;
+    color: var(--backb);
+}
